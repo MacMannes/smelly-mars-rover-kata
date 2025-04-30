@@ -7,7 +7,7 @@ FILE=`cat $1` # File containing the commit message
 
 echo "Commit Message: ${FILE}"
 
-if ! [[ $FILE =~ $REGEX ]]; then
+if ! echo "$FILE" | grep -qE "$REGEX"; then
 	echo >&2 "ERROR: Commit aborted for not following the Conventional Commit standard.​"
 	exit 1
 else
