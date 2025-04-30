@@ -1,11 +1,13 @@
 # Backlog
 
 - [ ] Fix lint errors and remove ignores
-- [ ] Make the code more readable by using meaningful names
+- [ ] Make the code more readable
+  - [ ] Remove comments
+  - [ ] Use meaningful names
 - [ ] Fix code smells
-  - [ ] Primitive obsession
   - [ ] Long method
-  - [ ] Large class
+  - [ ] Long class
   - [ ] Feature envy
   - [ ] Data clumps
+  - [ ] Primitive obsession
 - [ ] Try to support for multiple rovers
