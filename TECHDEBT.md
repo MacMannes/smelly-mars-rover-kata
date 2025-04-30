@@ -26,3 +26,9 @@
       - [ ] `yy` -> `y`
       - [ ] `dd` -> `direction`
 - [ ] Fix code Smells
+  - [ ] Fix SonarQube issues
+    - [ ] `rs` is never reassigned; mar as `readonly`
+    - [ ] Remove duplicated code
+      - [ ] extract method `rotateClockwise()`
+      - [ ] extract method `rotateCounterClockwise()`
+      - [ ] replace `if`/`else` with lookup table
