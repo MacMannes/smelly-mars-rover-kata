@@ -11,7 +11,7 @@
   - [ ] Use meaningful names
     - [ ] Class `Rover`
       - [ ] `rs`: `state`
-      - [ ] `pos()`: `toString()`
+      - [ ] `pos()`: `reportPosition()`
         - [ ] inline method `XYD()`
         - [ ] remove `XYD()` method
       - [ ] In constructor:
