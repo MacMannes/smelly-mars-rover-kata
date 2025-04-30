@@ -20,6 +20,7 @@
         - [ ] `go()` -> `_go()`
         - [ ] `G.z`: `G.commands`
         - [ ] Inline method `_go`
+        - [ ] `G()` -> `go()`
     - [ ] Class `RoverState`
       - [ ] `xx` -> `x`
       - [ ] `yy` -> `y`
