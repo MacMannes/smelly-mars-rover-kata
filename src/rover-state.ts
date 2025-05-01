@@ -1,15 +1,11 @@
-import {
-    directionValues,
-    isDirectionType,
-    type DirectionType,
-} from 'src/direction.ts';
+import { Direction } from 'src/direction.ts';
 import { Position } from 'src/position.ts';
 
 export class RoverState {
     private readonly position: Position;
-    private direction: DirectionType;
+    private readonly direction: Direction;
 
-    constructor(x = 0, y = 0, direction: DirectionType = 'N') {
+    private constructor(x = 0, y = 0, direction: Direction) {
         this.position = new Position(x, y);
         this.direction = direction;
     }
@@ -17,16 +13,12 @@ export class RoverState {
     public static fromString(state: string): RoverState {
         const stateParameters = state.split(' ');
         if (stateParameters.length < 3) {
-            return new RoverState();
+            return new RoverState(0, 0, new Direction());
         }
 
         const x = parseInt(stateParameters[0], 10);
         const y = parseInt(stateParameters[1], 10);
-
-        const direction = stateParameters[2];
-        if (!isDirectionType(direction)) {
-            return new RoverState(x, y, 'N');
-        }
+        const direction = new Direction(stateParameters[2]);
 
         return new RoverState(x, y, direction);
     }
@@ -40,17 +32,14 @@ export class RoverState {
     }
 
     public moveForward() {
-        this.position.moveForward(this.direction);
+        this.position.moveForward(this.direction.getType());
     }
 
     public toString(): string {
-        return `${this.position.toString()} ${this.direction}`;
+        return `${this.position} ${this.direction}`;
     }
 
     private rotate(rotation: number) {
-        const arrayLength = directionValues.length;
-        const currentIndex = directionValues.indexOf(this.direction);
-        const newIndex = (currentIndex + rotation + arrayLength) % arrayLength;
-        this.direction = directionValues[newIndex];
+        this.direction.rotate(rotation);
     }
 }

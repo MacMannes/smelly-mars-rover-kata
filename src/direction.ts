@@ -9,13 +9,17 @@ export function isDirectionType(value: unknown): value is DirectionType {
 export class Direction {
     private _direction: DirectionType;
 
-    constructor(direction: string) {
+    constructor(direction = 'N') {
         if (isDirectionType(direction)) {
             this._direction = direction;
             return;
         }
 
         this._direction = 'N';
+    }
+
+    public getType(): DirectionType {
+        return this._direction;
     }
 
     public rotate(rotation: number) {
