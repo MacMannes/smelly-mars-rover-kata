@@ -29,10 +29,15 @@ export class Rover {
     private handleCommand(command: string) {
         if (command === 'L') {
             this.state.direction = this.turnLeft(this.state.direction);
-        } else if (command === 'R') {
+            return;
+        }
+        if (command === 'R') {
             this.state.direction = this.turnRight(this.state.direction);
-        } else if (command === 'M') {
+            return;
+        }
+        if (command === 'M') {
             this.moveForward();
+            return;
         }
     }
 
