@@ -1,8 +1,8 @@
 # Backlog
 
-- [ ] Fix lint errors and remove ignores
+- [x] Fix lint errors and remove ignores
 - [ ] Make the code more readable
-  - [ ] Remove comments
+  - [x] Remove comments
   - [ ] Remove dead code
   - [ ] Use meaningful names
 - [ ] Fix code smells
