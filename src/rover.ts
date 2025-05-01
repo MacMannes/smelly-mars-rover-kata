@@ -28,11 +28,11 @@ export class Rover {
 
     private handleCommand(command: string) {
         if (command === 'L') {
-            this.state.direction = this.turnLeft(this.state.direction);
+            this.turnLeft(this.state.direction);
             return;
         }
         if (command === 'R') {
-            this.state.direction = this.turnRight(this.state.direction);
+            this.turnRight(this.state.direction);
             return;
         }
         if (command === 'M') {
@@ -41,12 +41,12 @@ export class Rover {
         }
     }
 
-    private turnLeft(direction: Direction): Direction {
-        return this.state.turnLeft(direction);
+    private turnLeft(direction: Direction) {
+        this.state.turnLeft(direction);
     }
 
-    private turnRight(direction: Direction): Direction {
-        return this.state.turnRight(direction);
+    private turnRight(direction: Direction) {
+        this.state.turnRight(direction);
     }
 
     private moveForward() {

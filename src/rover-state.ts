@@ -5,12 +5,12 @@ export class RoverState {
     y = 0;
     direction: Direction = 'N';
 
-    turnLeft(direction: Direction): Direction {
-        return this.rotate(direction, -1);
+    turnLeft(direction: Direction) {
+        this.rotate(direction, -1);
     }
 
-    turnRight(direction: Direction): Direction {
-        return this.rotate(direction, 1);
+    turnRight(direction: Direction) {
+        this.rotate(direction, 1);
     }
 
     moveForward() {
@@ -28,10 +28,10 @@ export class RoverState {
         }
     }
 
-    private rotate(direction: Direction, rotation: number): Direction {
+    private rotate(direction: Direction, rotation: number) {
         const arrayLength = directionValues.length;
         const currentIndex = directionValues.indexOf(direction);
         const newIndex = (currentIndex + rotation + arrayLength) % arrayLength;
-        return directionValues[newIndex];
+        this.direction = directionValues[newIndex];
     }
 }
