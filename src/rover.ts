@@ -28,29 +28,17 @@ export class Rover {
 
     private handleCommand(command: string) {
         if (command === 'L') {
-            this.turnLeft();
+            this.state.turnLeft();
             return;
         }
         if (command === 'R') {
-            this.turnRight();
+            this.state.turnRight();
             return;
         }
         if (command === 'M') {
-            this.moveForward();
+            this.state.moveForward();
             return;
         }
-    }
-
-    private turnLeft() {
-        this.state.turnLeft();
-    }
-
-    private turnRight() {
-        this.state.turnRight();
-    }
-
-    private moveForward() {
-        this.state.moveForward();
     }
 
     public reportPosition(): string {
