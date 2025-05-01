@@ -3,7 +3,7 @@
 - [x] Fix lint errors and remove ignores
 - [ ] Make the code more readable
   - [x] Remove comments
-  - [ ] Remove dead code
+  - [x] Remove dead code
   - [ ] Use meaningful names
 - [ ] Fix code smells
   - [ ] Comments
