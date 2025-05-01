@@ -1,13 +1,12 @@
 import { directionValues, isDirection, type Direction } from 'src/direction.ts';
+import { Position } from 'src/position.ts';
 
 export class RoverState {
-    private x: number;
-    private y: number;
+    private position: Position;
     private direction: Direction;
 
     constructor(x = 0, y = 0, direction: Direction = 'N') {
-        this.x = x;
-        this.y = y;
+        this.position = new Position(x, y);
         this.direction = direction;
     }
 
@@ -37,22 +36,11 @@ export class RoverState {
     }
 
     public moveForward() {
-        if (this.direction === 'E') {
-            this.x++;
-        }
-        if (this.direction === 'S') {
-            this.y--;
-        }
-        if (this.direction === 'W') {
-            this.x--;
-        }
-        if (this.direction === 'N') {
-            this.y++;
-        }
+        this.position.moveForward(this.direction);
     }
 
     public toString(): string {
-        return `${this.x} ${this.y} ${this.direction}`;
+        return `${this.position.toString()} ${this.direction}`;
     }
 
     private rotate(rotation: number) {

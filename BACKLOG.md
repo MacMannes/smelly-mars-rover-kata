@@ -11,6 +11,6 @@
   - [x] Long method
   - [x] Long class
   - [x] Feature envy
-  - [ ] Data clumps
+  - [x] Data clumps
   - [ ] Primitive obsession
 - [ ] Try to add support for multiple rovers

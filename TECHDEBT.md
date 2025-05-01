@@ -64,9 +64,9 @@
           - [x] Use early return in `Rover` constructor
           - [x] introduce `static fromString` method in `RoverState`
         - [x] Introduce toString method in `RoverState` and use it
-    - [ ] Data clumps
+    - [x] Data clumps
       - [x] Introduce `Position` class
       - [x] Copy method `moveForward` to `Position` class
-      - [ ] Replace `x` and `y` in `RoverState` with `Position`
-      - [ ] Use `Position.moveForward` in `RoverState`
-      - [ ] Use `Position.toString` in `RoverState`
+      - [x] Replace `x` and `y` in `RoverState` with `Position`
+      - [x] Use `Position.moveForward` in `RoverState`
+      - [x] Use `Position.toString` in `RoverState`
