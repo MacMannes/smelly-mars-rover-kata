@@ -28,9 +28,9 @@
       - [x] `dd` -> `direction`
   - [ ] Fix code Smells
     - [ ] Fix SonarQube issues
-      - [ ] `rs` is never reassigned; mar as `readonly`
+      - [x] `rs` is never reassigned; mar as `readonly`
       - [ ] Remove duplicated code
-        - [ ] Extract method `turnLeft()`
+        - [x] Extract method `turnLeft()`
         - [ ] Extract method `turnRight()`
         - [ ] Introduce Union Type `Direction`
         - [ ] Change `Roverstate.direction` to be of type `Direction`
