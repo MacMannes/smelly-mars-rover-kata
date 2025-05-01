@@ -1,19 +1,19 @@
 import { describe, expect, it } from 'vitest';
-import { isDirectionType } from 'src/direction.ts';
+import { Direction } from 'src/direction.ts';
 
-describe('isDirection', () => {
+describe('Direction class', () => {
     it.each([
-        ['N', true],
-        ['E', true],
-        ['S', true],
-        ['W', true],
-        ['', false],
-        ['SW', false],
+        ['N', 'N'],
+        ['E', 'E'],
+        ['S', 'S'],
+        ['W', 'W'],
+        ['', 'N'],
+        ['SW', 'N'],
     ])(
-        'should determine "%s" to be a valid direction as %s',
-        (direction, valid) => {
-            const isValid = isDirectionType(direction);
-            expect(isValid).toBe(valid);
+        'intantiated with type "%s" should have directionType "%s"',
+        (directionType, expected) => {
+            const directionClass = new Direction(directionType);
+            expect(directionClass.toString()).toBe(expected);
         },
     );
 });
