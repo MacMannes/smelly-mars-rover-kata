@@ -41,4 +41,5 @@
         - [x] Replace `if`/`else` with lookup table
     - [ ] Remove cognitive complexity
       - [x] Extract method `moveForward()`
-      - [ ] Extract method handleCommand()``
+      - [ ] Extract method handleCommand()`
+      - [ ] remove `else` statements

@@ -22,13 +22,17 @@ export class Rover {
     public go(commandSequence: string): void {
         const commands = commandSequence.split('');
         for (const command of commands) {
-            if (command === 'L') {
-                this.state.direction = this.turnLeft(this.state.direction);
-            } else if (command === 'R') {
-                this.state.direction = this.turnRight(this.state.direction);
-            } else if (command === 'M') {
-                this.moveForward();
-            }
+            this.handleCommand(command);
+        }
+    }
+
+    private handleCommand(command: string) {
+        if (command === 'L') {
+            this.state.direction = this.turnLeft(this.state.direction);
+        } else if (command === 'R') {
+            this.state.direction = this.turnRight(this.state.direction);
+        } else if (command === 'M') {
+            this.moveForward();
         }
     }
 
