@@ -30,6 +30,6 @@ export class Rover {
     }
 
     public reportPosition(): string {
-        return `${this.state.x} ${this.state.y} ${this.state.direction}`;
+        return this.state.toString();
     }
 }

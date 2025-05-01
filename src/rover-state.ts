@@ -36,7 +36,7 @@ export class RoverState {
         this.rotate(1);
     }
 
-    moveForward() {
+    public moveForward() {
         if (this.direction === 'E') {
             this.x++;
         }
@@ -49,6 +49,10 @@ export class RoverState {
         if (this.direction === 'N') {
             this.y++;
         }
+    }
+
+    public toString(): string {
+        return `${this.x} ${this.y} ${this.direction}`;
     }
 
     private rotate(rotation: number) {

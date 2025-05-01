@@ -63,4 +63,4 @@
         - [x] Use `RoverState.fromString()` in `Rover` class
           - [x] Use early return in `Rover` constructor
           - [x] introduce `static fromString` method in `RoverState`
-        - [ ] Introduce toString method in `RoverState` and use it
+        - [x] Introduce toString method in `RoverState` and use it
