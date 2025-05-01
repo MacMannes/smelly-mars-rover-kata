@@ -58,4 +58,7 @@
           - [x] Remove `direction` parameter from `Rover.turnLeft` method
           - [x] Remove `direction` parameter from `Rover.turnRight` method
         - [x] Inline methods `turnLeft`/`turnRight`/`moveForward` in `Rover`
-        - [ ] Add constructor to `RoverState` to set `x`, `y`, and `direction`
+        - [x] Add constructor to `RoverState` to set `x`, `y`, and `direction`
+        - [ ] Use constructor of `RoverState` in `Rover` class
+          - [ ] Use early return in `Rover` constructor
+          - [ ] introduce `static fromString` method in `RoverState`

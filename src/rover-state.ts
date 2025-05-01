@@ -5,6 +5,12 @@ export class RoverState {
     y = 0;
     direction: Direction = 'N';
 
+    costructor(x: number, y: number, direction: Direction) {
+        this.x = x;
+        this.y = y;
+        this.direction = direction;
+    }
+
     public turnLeft() {
         this.rotate(-1);
     }
