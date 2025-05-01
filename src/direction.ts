@@ -17,4 +17,11 @@ export class Direction {
 
         this._direction = 'N';
     }
+
+    public rotate(rotation: number) {
+        const arrayLength = directionValues.length;
+        const currentIndex = directionValues.indexOf(this._direction);
+        const newIndex = (currentIndex + rotation + arrayLength) % arrayLength;
+        this._direction = directionValues[newIndex];
+    }
 }
