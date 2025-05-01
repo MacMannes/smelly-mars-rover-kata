@@ -5,10 +5,10 @@
 - [x] Fix lint errors
   - [x] `@typescript-eslint/prefer-for-of`
   - [x] `@typescript-eslint/no-inferrable-types`
-- [ ] Make code more readable
+- [x] Make code more readable
   - [x] Remove comment in `RoverState` class
-  - [-] Add eslint rule to disallow unused variables/functions
-    - **NOTE** Not possible; only private methods are checked for usage
+  - [x] Add eslint rule to disallow unused variables/functions
+    - **NOTE**: Not possible; only private methods are checked for usage
   - [x] Remove unused method `G()`
   - [x] Use meaningful names
     - [x] Class `Rover`
