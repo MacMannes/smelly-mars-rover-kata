@@ -9,7 +9,7 @@
   - [x] Comments
   - [x] Dead code
   - [x] Long method
-  - [ ] Long class
+  - [x] Long class
   - [ ] Feature envy
   - [ ] Data clumps
   - [ ] Primitive obsession
