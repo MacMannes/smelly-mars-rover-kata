@@ -5,11 +5,11 @@ export class RoverState {
     y = 0;
     direction: Direction = 'N';
 
-    turnLeft() {
+    public turnLeft() {
         this.rotate(-1);
     }
 
-    turnRight() {
+    public turnRight() {
         this.rotate(1);
     }
 
