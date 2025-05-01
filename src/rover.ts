@@ -1,4 +1,5 @@
 import { RoverState } from 'src/rover-state.ts';
+import { isDirection } from 'src/direction.ts';
 
 export class Rover {
     private readonly state: RoverState = new RoverState();
@@ -8,7 +9,13 @@ export class Rover {
         if (stateParameters.length >= 3) {
             this.state.x = parseInt(stateParameters[0], 10);
             this.state.y = parseInt(stateParameters[1], 10);
-            this.state.direction = stateParameters[2][0];
+            const direction = stateParameters[2];
+            if (!isDirection(direction)) {
+                this.state.direction = 'N';
+                return;
+            }
+
+            this.state.direction = direction;
         }
     }
 
