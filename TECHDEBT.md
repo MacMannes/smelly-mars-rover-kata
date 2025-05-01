@@ -2,8 +2,8 @@
 
 ## Mikado plan
 
-- [ ] Fix lint errors
-  - [ ] `@typescript-eslint/prefer-for-of`
+- [x] Fix lint errors
+  - [x] `@typescript-eslint/prefer-for-of`
   - [x] `@typescript-eslint/no-inferrable-types`
 - [ ] Make code more readable
   - [ ] Remove comment in `RoverState` class

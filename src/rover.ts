@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/prefer-for-of */
-
 import { RoverState } from 'src/rover-state.ts';
 
 export class Rover {
@@ -13,8 +11,8 @@ export class Rover {
     }
 
     public go(cms: string): void {
-        for (let i = 0; i < cms.length; i++) {
-            const c = cms[i];
+        const characters = cms.split('');
+        for (const c of characters) {
             if (c === 'L') {
                 if (this.rs.dd === 'E') {
                     this.rs.dd = 'N';
