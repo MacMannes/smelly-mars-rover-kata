@@ -27,7 +27,7 @@
       - [x] `yy` -> `y`
       - [x] `dd` -> `direction`
   - [ ] Fix code Smells
-    - [ ] Fix SonarQube issues
+    - [x] Fix SonarQube issues
       - [x] `rs` is never reassigned; mar as `readonly`
       - [x] Remove duplicated code
         - [x] Extract method `turnLeft()`
@@ -39,7 +39,16 @@
         - [x] Change every other usage of `RoverState.direction` to be of type
               `Direction`
         - [x] Replace `if`/`else` with lookup table
-    - [ ] Remove cognitive complexity
+    - [x] Remove cognitive complexity
       - [x] Extract method `moveForward()`
-      - [ ] Extract method handleCommand()`
-      - [ ] remove `else` statements
+      - [x] Extract method handleCommand()`
+      - [x] remove `else` statements
+    - [ ] Feature envy
+      - [ ] Move and/or delegate appropriate methods to `RoverState`
+      - [ ] `rotate()`
+      - [ ] `turnLeft()`
+      - [ ] `turnRight()`
+      - [ ] `moveForward()`
+      - [ ] In `handleCommand()` move manipulation of `this.state.direction` to
+            `RoverState`
+      - [ ] Make members of RoverState private
