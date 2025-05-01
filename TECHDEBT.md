@@ -29,7 +29,7 @@
   - [ ] Fix code Smells
     - [ ] Fix SonarQube issues
       - [x] `rs` is never reassigned; mar as `readonly`
-      - [ ] Remove duplicated code
+      - [x] Remove duplicated code
         - [x] Extract method `turnLeft()`
         - [x] Extract method `turnRight()`
         - [x] Introduce Union Type `Direction`
