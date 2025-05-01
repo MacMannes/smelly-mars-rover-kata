@@ -43,7 +43,7 @@
       - [x] Extract method `moveForward()`
       - [x] Extract method handleCommand()`
       - [x] remove `else` statements
-    - [ ] Feature envy
+    - [x] Feature envy
       - [x] Move and/or delegate appropriate methods to `RoverState`
       - [x] `rotate()`
       - [x] `turnLeft()`
@@ -51,7 +51,7 @@
       - [x] `moveForward()`
       - [x] In `handleCommand()` move manipulation of `this.state.direction` to
             `RoverState`
-      - [ ] Make members of RoverState private
+      - [x] Make members of RoverState private
         - [x] Remove `direction` parameter from `turnLeft`/`turnRight` methods
               in `RoverState`
           - [x] Remove `direction` parameter from `RoverState.rotate` method
@@ -64,3 +64,6 @@
           - [x] Use early return in `Rover` constructor
           - [x] introduce `static fromString` method in `RoverState`
         - [x] Introduce toString method in `RoverState` and use it
+    - [ ] Data clumps
+      - [ ] Introduce `Position` class
+      - [ ] Move method `moveForward` to `Position` class
