@@ -70,3 +70,8 @@
       - [x] Replace `x` and `y` in `RoverState` with `Position`
       - [x] Use `Position.moveForward` in `RoverState`
       - [x] Use `Position.toString` in `RoverState`
+    - [ ] Primitive obsession
+      - [ ] Rename `Direction` to `DirectionType`
+      - [ ] Introduce `Direction` class
+      - [ ] Move method `rotate` to `Direction` class
+      - [ ] Add `toString` method to `Direction` class
