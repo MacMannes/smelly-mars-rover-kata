@@ -54,7 +54,7 @@ export class Rover {
         return `${this.state.xx} ${this.state.yy} ${this.state.dd}`;
     }
 
-    public pos(): string {
+    public reportPosition(): string {
         return this.XYD;
     }
 

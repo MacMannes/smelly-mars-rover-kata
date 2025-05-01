@@ -13,7 +13,7 @@
   - [ ] Use meaningful names
     - [ ] Class `Rover`
       - [x] `rs`: `state`
-      - [ ] `pos()`: `reportPosition()`
+      - [x] `pos()`: `reportPosition()`
         - [ ] inline method `XYD()`
         - [ ] remove `XYD()` method
       - [ ] In constructor:
