@@ -6,8 +6,8 @@
   - [x] Remove dead code
   - [x] Use meaningful names
 - [ ] Fix code smells
-  - [ ] Comments
-  - [ ] Dead code
+  - [x] Comments
+  - [x] Dead code
   - [ ] Long method
   - [ ] Long class
   - [ ] Feature envy

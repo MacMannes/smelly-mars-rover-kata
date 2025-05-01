@@ -40,4 +40,5 @@
               `Direction`
         - [x] Replace `if`/`else` with lookup table
     - [ ] Remove cognitive complexity
-      - [ ] Extract method `moveForward()`
+      - [x] Extract method `moveForward()`
+      - [ ] Extract method handleCommand()``
