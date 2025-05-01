@@ -5,12 +5,12 @@
   - [x] Remove comments
   - [x] Remove dead code
   - [x] Use meaningful names
-- [ ] Fix code smells
+- [x] Fix code smells
   - [x] Comments
   - [x] Dead code
   - [x] Long method
   - [x] Long class
   - [x] Feature envy
   - [x] Data clumps
-  - [ ] Primitive obsession
+  - [x] Primitive obsession
 - [ ] Try to add support for multiple rovers
