@@ -70,7 +70,7 @@
       - [x] Replace `x` and `y` in `RoverState` with `Position`
       - [x] Use `Position.moveForward` in `RoverState`
       - [x] Use `Position.toString` in `RoverState`
-    - [ ] Primitive obsession
+    - [x] Primitive obsession
       - [x] Rename `Direction` to `DirectionType`
       - [x] Introduce `Direction` class
       - [x] Copy method `rotate` to `Direction` class
@@ -78,9 +78,7 @@
       - [x] Use `Direction` class in `RoverState`
       - [x] Don't export things that don't need to be exported in `direction.ts`
         - [x] Refactor direction.test to use constructor of `Direction` class
-      - [ ] Refactor `Position.moveForward` method
+      - [x] Refactor `Position.moveForward` method
         - [x] Pass `Direction` as parameter
           - [x] Add `equals` method to `Direction` class
-          - [x] Add tests for `equals` method
-        - [ ] delegate to `Direction` class? - pass position and return new
-              position
+          - [x] Add tests for `equals` method position
