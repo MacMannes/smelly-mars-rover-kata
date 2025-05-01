@@ -2,7 +2,7 @@ import { directionValues, isDirection, type Direction } from 'src/direction.ts';
 import { Position } from 'src/position.ts';
 
 export class RoverState {
-    private position: Position;
+    private readonly position: Position;
     private direction: Direction;
 
     constructor(x = 0, y = 0, direction: Direction = 'N') {
