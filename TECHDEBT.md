@@ -32,6 +32,8 @@
       - [ ] Remove duplicated code
         - [x] Extract method `turnLeft()`
         - [x] Extract method `turnRight()`
-        - [ ] Introduce Union Type `Direction`
-        - [ ] Change `Roverstate.direction` to be of type `Direction`
+        - [x] Introduce Union Type `Direction`
+        - [x] Change `Roverstate.direction` to be of type `Direction`
+        - [ ] Change every other usage of `RoverState.direction` to be of type
+              `Direction`
         - [ ] Replace `if`/`else` with lookup table
