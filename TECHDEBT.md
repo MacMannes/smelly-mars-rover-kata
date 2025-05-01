@@ -31,7 +31,7 @@
       - [x] `rs` is never reassigned; mar as `readonly`
       - [ ] Remove duplicated code
         - [x] Extract method `turnLeft()`
-        - [ ] Extract method `turnRight()`
+        - [x] Extract method `turnRight()`
         - [ ] Introduce Union Type `Direction`
         - [ ] Change `Roverstate.direction` to be of type `Direction`
         - [ ] Replace `if`/`else` with lookup table
