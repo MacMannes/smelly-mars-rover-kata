@@ -45,10 +45,10 @@
       - [x] remove `else` statements
     - [ ] Feature envy
       - [ ] Move and/or delegate appropriate methods to `RoverState`
-      - [ ] `rotate()`
-      - [ ] `turnLeft()`
-      - [ ] `turnRight()`
-      - [ ] `moveForward()`
+      - [x] `rotate()`
+      - [x] `turnLeft()`
+      - [x] `turnRight()`
+      - [x] `moveForward()`
       - [ ] In `handleCommand()` move manipulation of `this.state.direction` to
             `RoverState`
       - [ ] Make members of RoverState private
