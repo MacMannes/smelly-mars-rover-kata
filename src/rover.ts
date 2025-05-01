@@ -10,10 +10,10 @@ export class Rover {
         }
     }
 
-    public go(cms: string): void {
-        const characters = cms.split('');
-        for (const c of characters) {
-            if (c === 'L') {
+    public go(commandSequence: string): void {
+        const commands = commandSequence.split('');
+        for (const command of commands) {
+            if (command === 'L') {
                 if (this.state.dd === 'E') {
                     this.state.dd = 'N';
                 } else if (this.state.dd === 'N') {
@@ -23,7 +23,7 @@ export class Rover {
                 } else if (this.state.dd === 'S') {
                     this.state.dd = 'E';
                 }
-            } else if (c === 'R') {
+            } else if (command === 'R') {
                 if (this.state.dd === 'E') {
                     this.state.dd = 'S';
                 } else if (this.state.dd === 'S') {
@@ -33,7 +33,7 @@ export class Rover {
                 } else if (this.state.dd === 'N') {
                     this.state.dd = 'E';
                 }
-            } else if (c === 'M') {
+            } else if (command === 'M') {
                 if (this.state.dd === 'E') {
                     this.state.xx++;
                 }

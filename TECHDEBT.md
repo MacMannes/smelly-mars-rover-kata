@@ -19,9 +19,9 @@
       - [x] In constructor:
         - [x] `p` -> `initialState`
         - [x] `s` -> `stateParameters`
-      - [ ] Method `go()`
-        - [ ] `cms`: `commands`
-        - [ ] `c`: `command`
+      - [x] Method `go()`
+        - [x] `cms`: `commands`
+        - [x] `c`: `command`
     - [ ] Class `RoverState`
       - [ ] `xx` -> `x`
       - [ ] `yy` -> `y`
