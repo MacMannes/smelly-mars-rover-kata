@@ -57,4 +57,5 @@
           - [x] Remove `direction` parameter from `RoverState.rotate` method
           - [x] Remove `direction` parameter from `Rover.turnLeft` method
           - [x] Remove `direction` parameter from `Rover.turnRight` method
-        - [ ] Inline methods `turnLeft`/`turnRight`/`moveForward` in `Rover`
+        - [x] Inline methods `turnLeft`/`turnRight`/`moveForward` in `Rover`
+        - [ ] Add constructor to `RoverState` to set `x`, `y`, and `direction`
