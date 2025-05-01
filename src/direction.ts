@@ -1,5 +1,5 @@
 const directionValues = ['N', 'E', 'S', 'W'] as const;
-type DirectionType = (typeof directionValues)[number];
+export type DirectionType = (typeof directionValues)[number];
 
 export class Direction {
     private _direction: DirectionType;
