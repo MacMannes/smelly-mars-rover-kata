@@ -22,10 +22,10 @@
       - [x] Method `go()`
         - [x] `cms`: `commands`
         - [x] `c`: `command`
-    - [ ] Class `RoverState`
-      - [ ] `xx` -> `x`
-      - [ ] `yy` -> `y`
-      - [ ] `dd` -> `direction`
+    - [x] Class `RoverState`
+      - [x] `xx` -> `x`
+      - [x] `yy` -> `y`
+      - [x] `dd` -> `direction`
   - [ ] Fix code Smells
     - [ ] Fix SonarQube issues
       - [ ] `rs` is never reassigned; mar as `readonly`

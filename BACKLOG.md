@@ -4,7 +4,7 @@
 - [ ] Make the code more readable
   - [x] Remove comments
   - [x] Remove dead code
-  - [ ] Use meaningful names
+  - [x] Use meaningful names
 - [ ] Fix code smells
   - [ ] Comments
   - [ ] Dead code
