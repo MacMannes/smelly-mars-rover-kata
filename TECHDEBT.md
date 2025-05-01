@@ -6,7 +6,7 @@
   - [x] `@typescript-eslint/prefer-for-of`
   - [x] `@typescript-eslint/no-inferrable-types`
 - [ ] Make code more readable
-  - [ ] Remove comment in `RoverState` class
+  - [x] Remove comment in `RoverState` class
   - [ ] Add eslint rule to disallow unused variables/functions
   - [ ] Remove unused method `G()`
   - [ ] Use meaningful names
