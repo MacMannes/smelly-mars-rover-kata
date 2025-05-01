@@ -12,7 +12,7 @@
   - [x] Remove unused method `G()`
   - [ ] Use meaningful names
     - [ ] Class `Rover`
-      - [ ] `rs`: `state`
+      - [x] `rs`: `state`
       - [ ] `pos()`: `reportPosition()`
         - [ ] inline method `XYD()`
         - [ ] remove `XYD()` method
