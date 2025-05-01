@@ -28,6 +28,8 @@
     - [ ] Fix SonarQube issues
       - [ ] `rs` is never reassigned; mar as `readonly`
       - [ ] Remove duplicated code
-        - [ ] extract method `rotateClockwise()`
-        - [ ] extract method `rotateCounterClockwise()`
+        - [ ] extract method `turnLeft()`
+        - [ ] extract method `turnRight()`
+        - [ ] introduce Union Type `Direction`
+          - [ ] Change `Roverstate.direction` to be of type `Direction`
         - [ ] replace `if`/`else` with lookup table
