@@ -16,9 +16,9 @@ export class Rover {
         const commands = commandSequence.split('');
         for (const command of commands) {
             if (command === 'L') {
-                this.turnLeft(this.state.direction);
+                this.state.direction = this.turnLeft(this.state.direction);
             } else if (command === 'R') {
-                this.turnRight(this.state.direction);
+                this.state.direction = this.turnRight(this.state.direction);
             } else if (command === 'M') {
                 if (this.state.direction === 'E') {
                     this.state.x++;
@@ -36,28 +36,26 @@ export class Rover {
         }
     }
 
-    private turnLeft(direction: string): void {
+    private turnLeft(direction: string): string {
         if (direction === 'E') {
-            direction = 'N';
+            return 'N';
         } else if (direction === 'N') {
-            direction = 'W';
+            return 'W';
         } else if (direction === 'W') {
-            direction = 'S';
-        } else if (direction === 'S') {
-            direction = 'E';
+            return 'S';
         }
+        return 'E';
     }
 
-    private turnRight(direction: string) {
+    private turnRight(direction: string): string {
         if (direction === 'E') {
-            direction = 'S';
+            return 'S';
         } else if (direction === 'S') {
-            direction = 'W';
+            return 'W';
         } else if (direction === 'W') {
-            direction = 'N';
-        } else if (direction === 'N') {
-            direction = 'E';
+            return 'N';
         }
+        return 'E';
     }
 
     public reportPosition(): string {
