@@ -24,11 +24,11 @@ export class RoverState {
     }
 
     public turnLeft() {
-        this.rotate(-1);
+        this.direction.rotate(-1);
     }
 
     public turnRight() {
-        this.rotate(1);
+        this.direction.rotate(1);
     }
 
     public moveForward() {
@@ -37,9 +37,5 @@ export class RoverState {
 
     public toString(): string {
         return `${this.position} ${this.direction}`;
-    }
-
-    private rotate(rotation: number) {
-        this.direction.rotate(rotation);
     }
 }
