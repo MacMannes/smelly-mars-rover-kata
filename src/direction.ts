@@ -24,4 +24,8 @@ export class Direction {
         const newIndex = (currentIndex + rotation + arrayLength) % arrayLength;
         this._direction = directionValues[newIndex];
     }
+
+    public toString(): string {
+        return this._direction;
+    }
 }
