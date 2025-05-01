@@ -3,6 +3,7 @@ import { Rover } from 'src/rover.ts';
 
 describe('MarsRoverShould', () => {
     test.each([
+        ['', '', '0 0 N'],
         ['1 2 N', '', '1 2 N'],
         ['1 2 X', '', '1 2 N'],
         ['1 2 N', 'L', '1 2 W'],
