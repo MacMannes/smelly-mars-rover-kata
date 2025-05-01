@@ -25,7 +25,6 @@ export class Rover {
         }
         if (command === 'M') {
             this.state.moveForward();
-            return;
         }
     }
 
