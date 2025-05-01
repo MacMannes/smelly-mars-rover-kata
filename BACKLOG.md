@@ -10,7 +10,7 @@
   - [x] Dead code
   - [x] Long method
   - [x] Long class
-  - [ ] Feature envy
+  - [x] Feature envy
   - [ ] Data clumps
   - [ ] Primitive obsession
 - [ ] Try to add support for multiple rovers

@@ -66,6 +66,4 @@
         - [x] Introduce toString method in `RoverState` and use it
     - [ ] Data clumps
       - [ ] Introduce `Position` class
-      - [ ] Move method `turnLeft`, `turnRight` and `rotate` to `Position` class
-      - [ ] Move method `moveForward` to `Position` class
       - [ ] Move method `moveForward` to `Position` class
