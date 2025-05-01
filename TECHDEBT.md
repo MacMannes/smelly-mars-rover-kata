@@ -38,4 +38,6 @@
           - [x] Add test to handle invalid direction in Rover constructor
         - [x] Change every other usage of `RoverState.direction` to be of type
               `Direction`
-        - [ ] Replace `if`/`else` with lookup table
+        - [x] Replace `if`/`else` with lookup table
+    - [ ] Remove cognitive complexity
+      - [ ] Extract method `moveForward()`
