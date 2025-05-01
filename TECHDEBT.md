@@ -82,3 +82,11 @@
         - [x] Pass `Direction` as parameter
           - [x] Add `equals` method to `Direction` class
           - [x] Add tests for `equals` method position
+- [ ] Add support for multiple rovers
+  - [ ] Add `Plateau` class with array of `Rover` objects
+  - [ ] Add `land` method to `Rover` class with parameters Plateau and string
+        representation of position
+  - [ ] Remove parameters from `Rover` constructor
+  - [ ] Add `isOccupied` method to `Plateau` class, passing parameter `Position`
+  - [ ] Don't allow rovers to land on the same position
+  - [ ] Stop movement if rover detects a blockage
