@@ -1,10 +1,9 @@
 /* eslint-disable @typescript-eslint/prefer-for-of */
-/* eslint-disable @typescript-eslint/no-inferrable-types */
 
 import { RoverState } from 'src/rover-state.ts';
 
 export class Rover {
-    constructor(p: string = '') {
+    constructor(p: string) {
         const s = p.split(' ');
         if (s.length >= 3) {
             this.rs.xx = parseInt(s[0], 10);

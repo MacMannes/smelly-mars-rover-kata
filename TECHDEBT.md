@@ -4,7 +4,7 @@
 
 - [ ] Fix lint errors
   - [ ] `@typescript-eslint/prefer-for-of`
-  - [ ] `@typescript-eslint/no-inferrable-types`
+  - [x] `@typescript-eslint/no-inferrable-types`
 - [ ] Make code more readable
   - [ ] Remove comment in `RoverState` class
   - [ ] Add eslint rule to disallow unused variables/functions
