@@ -65,5 +65,8 @@
           - [x] introduce `static fromString` method in `RoverState`
         - [x] Introduce toString method in `RoverState` and use it
     - [ ] Data clumps
-      - [ ] Introduce `Position` class
-      - [ ] Move method `moveForward` to `Position` class
+      - [x] Introduce `Position` class
+      - [x] Copy method `moveForward` to `Position` class
+      - [ ] Replace `x` and `y` in `RoverState` with `Position`
+      - [ ] Use `Position.moveForward` in `RoverState`
+      - [ ] Use `Position.toString` in `RoverState`
