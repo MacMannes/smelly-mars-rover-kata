@@ -27,18 +27,7 @@ export class Rover {
             } else if (command === 'R') {
                 this.state.direction = this.turnRight(this.state.direction);
             } else if (command === 'M') {
-                if (this.state.direction === 'E') {
-                    this.state.x++;
-                }
-                if (this.state.direction === 'S') {
-                    this.state.y--;
-                }
-                if (this.state.direction === 'W') {
-                    this.state.x--;
-                }
-                if (this.state.direction === 'N') {
-                    this.state.y++;
-                }
+                this.moveForward();
             }
         }
     }
@@ -56,6 +45,21 @@ export class Rover {
         const currentIndex = directionValues.indexOf(direction);
         const newIndex = (currentIndex + rotation + arrayLength) % arrayLength;
         return directionValues[newIndex];
+    }
+
+    private moveForward() {
+        if (this.state.direction === 'E') {
+            this.state.x++;
+        }
+        if (this.state.direction === 'S') {
+            this.state.y--;
+        }
+        if (this.state.direction === 'W') {
+            this.state.x--;
+        }
+        if (this.state.direction === 'N') {
+            this.state.y++;
+        }
     }
 
     public reportPosition(): string {
