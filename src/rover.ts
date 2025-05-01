@@ -44,16 +44,17 @@ export class Rover {
     }
 
     private turnLeft(direction: Direction): Direction {
-        const arrayLength = directionValues.length;
-        const currentIndex = directionValues.indexOf(direction);
-        const newIndex = (currentIndex - 1 + arrayLength) % arrayLength;
-        return directionValues[newIndex];
+        return this.rotate(direction, -1);
     }
 
     private turnRight(direction: Direction): Direction {
+        return this.rotate(direction, 1);
+    }
+
+    private rotate(direction: Direction, rotation: number): Direction {
         const arrayLength = directionValues.length;
         const currentIndex = directionValues.indexOf(direction);
-        const newIndex = (currentIndex + 1 + arrayLength) % arrayLength;
+        const newIndex = (currentIndex + rotation + arrayLength) % arrayLength;
         return directionValues[newIndex];
     }
 
