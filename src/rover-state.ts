@@ -1,9 +1,9 @@
 import { directionValues, isDirection, type Direction } from 'src/direction.ts';
 
 export class RoverState {
-    x: number;
-    y: number;
-    direction: Direction;
+    private x: number;
+    private y: number;
+    private direction: Direction;
 
     constructor(x = 0, y = 0, direction: Direction = 'N') {
         this.x = x;
