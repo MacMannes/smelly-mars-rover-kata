@@ -7,6 +7,7 @@
   - [ ] `@typescript-eslint/no-inferrable-types`
 - [ ] Make code more readable
   - [ ] Remove comment in `RoverState` class
+  - [ ] Add eslint rule to disallow unused variables/functions
   - [ ] Remove unused method `G()`
   - [ ] Use meaningful names
     - [ ] Class `Rover`
@@ -28,8 +29,8 @@
     - [ ] Fix SonarQube issues
       - [ ] `rs` is never reassigned; mar as `readonly`
       - [ ] Remove duplicated code
-        - [ ] extract method `turnLeft()`
-        - [ ] extract method `turnRight()`
-        - [ ] introduce Union Type `Direction`
-          - [ ] Change `Roverstate.direction` to be of type `Direction`
-        - [ ] replace `if`/`else` with lookup table
+        - [ ] Extract method `turnLeft()`
+        - [ ] Extract method `turnRight()`
+        - [ ] Introduce Union Type `Direction`
+        - [ ] Change `Roverstate.direction` to be of type `Direction`
+        - [ ] Replace `if`/`else` with lookup table
