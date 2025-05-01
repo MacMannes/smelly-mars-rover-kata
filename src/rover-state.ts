@@ -17,13 +17,13 @@ export class RoverState {
             return new RoverState();
         }
 
-        const direction = stateParameters[2] as Direction;
-        if (!isDirection(direction)) {
-            return new RoverState();
-        }
-
         const x = parseInt(stateParameters[0], 10);
         const y = parseInt(stateParameters[1], 10);
+
+        const direction = stateParameters[2];
+        if (!isDirection(direction)) {
+            return new RoverState(x, y, 'N');
+        }
 
         return new RoverState(x, y, direction);
     }

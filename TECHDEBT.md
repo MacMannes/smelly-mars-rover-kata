@@ -60,6 +60,6 @@
         - [x] Inline methods `turnLeft`/`turnRight`/`moveForward` in `Rover`
         - [x] Add constructor to `RoverState` to set `x`, `y`, and `direction`
         - [x] Add default values to `RoverState` constructor
-        - [ ] Use `RoverState.fromString()` in `Rover` class
+        - [x] Use `RoverState.fromString()` in `Rover` class
           - [x] Use early return in `Rover` constructor
           - [x] introduce `static fromString` method in `RoverState`
