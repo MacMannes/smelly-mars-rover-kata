@@ -1,5 +1,5 @@
 import { RoverState } from 'src/rover-state.ts';
-import { isDirection, type Direction } from 'src/direction.ts';
+import { isDirection } from 'src/direction.ts';
 
 export class Rover {
     private readonly state: RoverState = new RoverState();
@@ -28,11 +28,11 @@ export class Rover {
 
     private handleCommand(command: string) {
         if (command === 'L') {
-            this.turnLeft(this.state.direction);
+            this.turnLeft();
             return;
         }
         if (command === 'R') {
-            this.turnRight(this.state.direction);
+            this.turnRight();
             return;
         }
         if (command === 'M') {
@@ -41,12 +41,12 @@ export class Rover {
         }
     }
 
-    private turnLeft(direction: Direction) {
-        this.state.turnLeft(direction);
+    private turnLeft() {
+        this.state.turnLeft();
     }
 
-    private turnRight(direction: Direction) {
-        this.state.turnRight(direction);
+    private turnRight() {
+        this.state.turnRight();
     }
 
     private moveForward() {
