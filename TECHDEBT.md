@@ -44,11 +44,16 @@
       - [x] Extract method handleCommand()`
       - [x] remove `else` statements
     - [ ] Feature envy
-      - [ ] Move and/or delegate appropriate methods to `RoverState`
+      - [x] Move and/or delegate appropriate methods to `RoverState`
       - [x] `rotate()`
       - [x] `turnLeft()`
       - [x] `turnRight()`
       - [x] `moveForward()`
-      - [ ] In `handleCommand()` move manipulation of `this.state.direction` to
+      - [x] In `handleCommand()` move manipulation of `this.state.direction` to
             `RoverState`
       - [ ] Make members of RoverState private
+        - [ ] Remove `direction` parameter from `turnLeft`/`turnRight` methods
+              in `RoverState`
+          - [ ] Remove `direction` parameter from `RoverState.rotate` method
+          - [ ] Remove `direction` parameter from `Rover.turnLeft` method
+          - [ ] Remove `direction` parameter from `Rover.turnRight` method
