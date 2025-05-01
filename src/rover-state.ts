@@ -1,11 +1,15 @@
-import { directionValues, isDirection, type Direction } from 'src/direction.ts';
+import {
+    directionValues,
+    isDirectionType,
+    type DirectionType,
+} from 'src/direction.ts';
 import { Position } from 'src/position.ts';
 
 export class RoverState {
     private readonly position: Position;
-    private direction: Direction;
+    private direction: DirectionType;
 
-    constructor(x = 0, y = 0, direction: Direction = 'N') {
+    constructor(x = 0, y = 0, direction: DirectionType = 'N') {
         this.position = new Position(x, y);
         this.direction = direction;
     }
@@ -20,7 +24,7 @@ export class RoverState {
         const y = parseInt(stateParameters[1], 10);
 
         const direction = stateParameters[2];
-        if (!isDirection(direction)) {
+        if (!isDirectionType(direction)) {
             return new RoverState(x, y, 'N');
         }
 

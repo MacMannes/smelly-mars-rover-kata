@@ -1,4 +1,4 @@
-import type { Direction } from 'src/direction.ts';
+import type { DirectionType } from 'src/direction.ts';
 
 export class Position {
     private x: number;
@@ -9,7 +9,7 @@ export class Position {
         this.y = y;
     }
 
-    public moveForward(direction: Direction) {
+    public moveForward(direction: DirectionType) {
         if (direction === 'E') {
             this.x++;
         }

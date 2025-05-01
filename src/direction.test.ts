@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { isDirection } from 'src/direction.ts';
+import { isDirectionType } from 'src/direction.ts';
 
 describe('isDirection', () => {
     it.each([
@@ -12,7 +12,7 @@ describe('isDirection', () => {
     ])(
         'should determine "%s" to be a valid direction as %s',
         (direction, valid) => {
-            const isValid = isDirection(direction);
+            const isValid = isDirectionType(direction);
             expect(isValid).toBe(valid);
         },
     );
