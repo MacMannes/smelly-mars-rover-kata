@@ -73,7 +73,7 @@
     - [ ] Primitive obsession
       - [x] Rename `Direction` to `DirectionType`
       - [x] Introduce `Direction` class
-      - [ ] Copy method `rotate` to `Direction` class
-      - [ ] Add `toString` method to `Direction` class
-      - [ ] Use `Direction` class in `RoverState`
+      - [x] Copy method `rotate` to `Direction` class
+      - [x] Add `toString` method to `Direction` class
+      - [x] Use `Direction` class in `RoverState`
       - [ ] Don't export things that don't need to be exported in `direction.ts`
