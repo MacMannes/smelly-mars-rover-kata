@@ -50,12 +50,8 @@ export class Rover {
         }
     }
 
-    public get XYD(): string {
-        return `${this.state.xx} ${this.state.yy} ${this.state.dd}`;
-    }
-
     public reportPosition(): string {
-        return this.XYD;
+        return `${this.state.xx} ${this.state.yy} ${this.state.dd}`;
     }
 
     private state: RoverState = new RoverState();
