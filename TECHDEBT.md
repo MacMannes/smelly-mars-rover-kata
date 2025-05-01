@@ -10,8 +10,8 @@
   - [-] Add eslint rule to disallow unused variables/functions
     - **NOTE** Not possible; only private methods are checked for usage
   - [x] Remove unused method `G()`
-  - [ ] Use meaningful names
-    - [ ] Class `Rover`
+  - [x] Use meaningful names
+    - [x] Class `Rover`
       - [x] `rs`: `state`
       - [x] `pos()`: `reportPosition()`
         - [x] inline method `XYD()`
