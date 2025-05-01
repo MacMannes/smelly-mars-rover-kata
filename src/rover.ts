@@ -6,17 +6,19 @@ export class Rover {
 
     constructor(initalState: string) {
         const stateParameters = initalState.split(' ');
-        if (stateParameters.length >= 3) {
-            this.state.x = parseInt(stateParameters[0], 10);
-            this.state.y = parseInt(stateParameters[1], 10);
-            const direction = stateParameters[2];
-            if (!isDirection(direction)) {
-                this.state.direction = 'N';
-                return;
-            }
-
-            this.state.direction = direction;
+        if (stateParameters.length < 3) {
+            return;
         }
+
+        this.state.x = parseInt(stateParameters[0], 10);
+        this.state.y = parseInt(stateParameters[1], 10);
+        const direction = stateParameters[2];
+        if (!isDirection(direction)) {
+            this.state.direction = 'N';
+            return;
+        }
+
+        this.state.direction = direction;
     }
 
     public go(commandSequence: string): void {

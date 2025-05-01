@@ -1,4 +1,4 @@
-import { directionValues, type Direction } from 'src/direction.ts';
+import { directionValues, isDirection, type Direction } from 'src/direction.ts';
 
 export class RoverState {
     x: number;
@@ -9,6 +9,23 @@ export class RoverState {
         this.x = x;
         this.y = y;
         this.direction = direction;
+    }
+
+    public static fromString(state: string): RoverState {
+        const stateParameters = state.split(' ');
+        if (stateParameters.length < 3) {
+            return new RoverState();
+        }
+
+        const direction = stateParameters[2] as Direction;
+        if (!isDirection(direction)) {
+            return new RoverState();
+        }
+
+        const x = parseInt(stateParameters[0], 10);
+        const y = parseInt(stateParameters[1], 10);
+
+        return new RoverState(x, y, direction);
     }
 
     public turnLeft() {
