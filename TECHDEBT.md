@@ -77,3 +77,4 @@
       - [x] Add `toString` method to `Direction` class
       - [x] Use `Direction` class in `RoverState`
       - [ ] Don't export things that don't need to be exported in `direction.ts`
+        - [ ] Refactor direction.test to use constructor of `Direction` class
