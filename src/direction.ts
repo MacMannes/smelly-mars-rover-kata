@@ -24,6 +24,16 @@ export class Direction {
         this._direction = directionValues[newIndex];
     }
 
+    public equals(other: unknown): boolean {
+        if (other instanceof Direction) {
+            return this._direction === other.getType();
+        }
+        if (typeof other === 'string') {
+            return this._direction === other;
+        }
+        return false;
+    }
+
     public toString(): string {
         return this._direction;
     }

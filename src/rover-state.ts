@@ -34,7 +34,7 @@ export class RoverState {
     }
 
     public moveForward() {
-        this.position.moveForward(this.direction.getType());
+        this.position.moveForward(this.direction);
     }
 
     public toString(): string {

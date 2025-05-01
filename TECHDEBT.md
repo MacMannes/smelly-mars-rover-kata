@@ -79,5 +79,8 @@
       - [x] Don't export things that don't need to be exported in `direction.ts`
         - [x] Refactor direction.test to use constructor of `Direction` class
       - [ ] Refactor `Position.moveForward` method
+        - [x] Pass `Direction` as parameter
+          - [x] Add `equals` method to `Direction` class
+          - [x] Add tests for `equals` method
         - [ ] delegate to `Direction` class? - pass position and return new
               position
