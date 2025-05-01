@@ -1,6 +1,8 @@
 import { RoverState } from 'src/rover-state.ts';
 
 export class Rover {
+    private state: RoverState = new RoverState();
+
     constructor(initalState: string) {
         const stateParameters = initalState.split(' ');
         if (stateParameters.length >= 3) {
@@ -53,6 +55,4 @@ export class Rover {
     public reportPosition(): string {
         return `${this.state.x} ${this.state.y} ${this.state.direction}`;
     }
-
-    private state: RoverState = new RoverState();
 }
