@@ -14,11 +14,11 @@
     - [ ] Class `Rover`
       - [x] `rs`: `state`
       - [x] `pos()`: `reportPosition()`
-        - [ ] inline method `XYD()`
-        - [ ] remove `XYD()` method
-      - [ ] In constructor:
-        - [ ] `p` -> `initialState`
-        - [ ] `s` -> `stateParameters`
+        - [x] inline method `XYD()`
+        - [x] remove `XYD()` method
+      - [x] In constructor:
+        - [x] `p` -> `initialState`
+        - [x] `s` -> `stateParameters`
       - [ ] Method `go()`
         - [ ] `cms`: `commands`
         - [ ] `c`: `command`

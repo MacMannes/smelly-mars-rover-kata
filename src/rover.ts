@@ -1,12 +1,12 @@
 import { RoverState } from 'src/rover-state.ts';
 
 export class Rover {
-    constructor(p: string) {
-        const s = p.split(' ');
-        if (s.length >= 3) {
-            this.state.xx = parseInt(s[0], 10);
-            this.state.yy = parseInt(s[1], 10);
-            this.state.dd = s[2][0];
+    constructor(initalState: string) {
+        const stateParameters = initalState.split(' ');
+        if (stateParameters.length >= 3) {
+            this.state.xx = parseInt(stateParameters[0], 10);
+            this.state.yy = parseInt(stateParameters[1], 10);
+            this.state.dd = stateParameters[2][0];
         }
     }
 
