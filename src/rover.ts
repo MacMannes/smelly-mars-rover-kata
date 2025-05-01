@@ -1,7 +1,7 @@
 import { RoverState } from 'src/rover-state.ts';
 
 export class Rover {
-    private state: RoverState = new RoverState();
+    private readonly state: RoverState = new RoverState();
 
     constructor(initalState: string) {
         const stateParameters = initalState.split(' ');
