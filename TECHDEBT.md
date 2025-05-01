@@ -34,6 +34,7 @@
         - [x] Extract method `turnRight()`
         - [x] Introduce Union Type `Direction`
         - [x] Change `Roverstate.direction` to be of type `Direction`
+          - [ ] Add method to parse `Direction` from string
         - [ ] Change every other usage of `RoverState.direction` to be of type
               `Direction`
         - [ ] Replace `if`/`else` with lookup table
