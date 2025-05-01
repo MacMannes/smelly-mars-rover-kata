@@ -8,7 +8,9 @@
 | 5, 6 | Fix Sonarqube issues part 1                       |
 |    7 | Fix Sonarqube issues part 2                       |
 |    8 | Fix _Feature envy_ issues                         |
-|    9 | Start with _Data clumps_ issue                    |
+|    9 | Fix _Data clumps_ issue                           |
+|   10 | Fix _Primitive obsession_ issue                   |
 
 **_N.B._**: I spent more 🍅 than expected, because I didn't feel very well, but
-I'm having so much fun with this kata that I kept going.
+I'm having so much fun with this kata that I just kept going. Also, this was the
+first time I used a Mikado plan myself, and that did slowed me down a bit.
