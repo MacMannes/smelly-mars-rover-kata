@@ -1,5 +1,5 @@
 import { RoverState } from 'src/rover-state.ts';
-import { isDirection, type Direction } from 'src/direction.ts';
+import { directionValues, isDirection, type Direction } from 'src/direction.ts';
 
 export class Rover {
     private readonly state: RoverState = new RoverState();
@@ -44,25 +44,17 @@ export class Rover {
     }
 
     private turnLeft(direction: Direction): Direction {
-        if (direction === 'E') {
-            return 'N';
-        } else if (direction === 'N') {
-            return 'W';
-        } else if (direction === 'W') {
-            return 'S';
-        }
-        return 'E';
+        const arrayLength = directionValues.length;
+        const currentIndex = directionValues.indexOf(direction);
+        const newIndex = (currentIndex - 1 + arrayLength) % arrayLength;
+        return directionValues[newIndex];
     }
 
     private turnRight(direction: Direction): Direction {
-        if (direction === 'E') {
-            return 'S';
-        } else if (direction === 'S') {
-            return 'W';
-        } else if (direction === 'W') {
-            return 'N';
-        }
-        return 'E';
+        const arrayLength = directionValues.length;
+        const currentIndex = directionValues.indexOf(direction);
+        const newIndex = (currentIndex + 1 + arrayLength) % arrayLength;
+        return directionValues[newIndex];
     }
 
     public reportPosition(): string {

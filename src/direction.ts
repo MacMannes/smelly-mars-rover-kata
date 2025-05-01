@@ -1,4 +1,4 @@
-const directionValues = ['N', 'E', 'S', 'W'] as const;
+export const directionValues = ['N', 'E', 'S', 'W'] as const;
 
 export type Direction = (typeof directionValues)[number];
 
