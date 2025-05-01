@@ -86,6 +86,7 @@
   - [ ] Add `Plateau` class with array of `Rover` objects
   - [ ] Add `land` method to `Rover` class with parameters Plateau and string
         representation of position
+  - [ ] Rover should report an empty position when not landed
   - [ ] Remove parameters from `Rover` constructor
   - [ ] Add `isOccupied` method to `Plateau` class, passing parameter `Position`
   - [ ] Don't allow rovers to land on the same position
