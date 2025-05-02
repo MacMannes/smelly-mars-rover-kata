@@ -26,11 +26,11 @@ export class RoverState {
     }
 
     public turnLeft() {
-        this.direction.rotate(-1);
+        this.direction.turnLeft();
     }
 
     public turnRight() {
-        this.direction.rotate(1);
+        this.direction.turnRight();
     }
 
     public moveForward() {

@@ -13,20 +13,17 @@ export class Direction {
         this._direction = 'N';
     }
 
-    public getType(): DirectionType {
-        return this._direction;
+    public turnLeft() {
+        this.rotate(-1);
     }
 
-    public rotate(rotation: number) {
-        const arrayLength = directionValues.length;
-        const currentIndex = directionValues.indexOf(this._direction);
-        const newIndex = (currentIndex + rotation + arrayLength) % arrayLength;
-        this._direction = directionValues[newIndex];
+    public turnRight() {
+        this.rotate(1);
     }
 
     public equals(other: unknown): boolean {
         if (other instanceof Direction) {
-            return this._direction === other.getType();
+            return this._direction === other._direction;
         }
         if (typeof other === 'string') {
             return this._direction === other;
@@ -36,6 +33,13 @@ export class Direction {
 
     public toString(): string {
         return this._direction;
+    }
+
+    private rotate(rotation: number) {
+        const arrayLength = directionValues.length;
+        const currentIndex = directionValues.indexOf(this._direction);
+        const newIndex = (currentIndex + rotation + arrayLength) % arrayLength;
+        this._direction = directionValues[newIndex];
     }
 
     private isDirectionType(value: unknown): value is DirectionType {
