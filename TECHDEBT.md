@@ -84,6 +84,8 @@
           - [x] Add tests for `equals` method position
 - [ ] Add support for multiple rovers
   - [ ] Add `Plateau` class with array of `Rover` objects
+  - [ ] Add `addRover` method to `Plateau` class, passing parameter `Rover` and
+        `Position`
   - [ ] Add `land` method to `Rover` class with parameters Plateau and string
         representation of position
   - [ ] Rover should report an empty position when not landed
