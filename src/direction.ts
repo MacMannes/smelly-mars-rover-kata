@@ -1,6 +1,9 @@
 const directionValues = ['N', 'E', 'S', 'W'] as const;
 type DirectionType = (typeof directionValues)[number];
 
+const CLOCKWISE = 1;
+const COUNTER_CLOCKWISE = -1;
+
 export class Direction {
     private _direction: DirectionType;
 
@@ -14,11 +17,11 @@ export class Direction {
     }
 
     public turnLeft() {
-        this.rotate(-1);
+        this.rotate(COUNTER_CLOCKWISE);
     }
 
     public turnRight() {
-        this.rotate(1);
+        this.rotate(CLOCKWISE);
     }
 
     public equals(other: unknown): boolean {
