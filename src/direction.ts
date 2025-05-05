@@ -5,15 +5,15 @@ const CLOCKWISE = 1;
 const COUNTER_CLOCKWISE = -1;
 
 export class Direction {
-    private _direction: DirectionType;
+    private type: DirectionType;
 
     constructor(direction = 'N') {
         if (this.isDirectionType(direction)) {
-            this._direction = direction;
+            this.type = direction;
             return;
         }
 
-        this._direction = 'N';
+        this.type = 'N';
     }
 
     public turnLeft() {
@@ -26,23 +26,23 @@ export class Direction {
 
     public equals(other: unknown): boolean {
         if (other instanceof Direction) {
-            return this._direction === other._direction;
+            return this.type === other.type;
         }
         if (typeof other === 'string') {
-            return this._direction === other;
+            return this.type === other;
         }
         return false;
     }
 
     public toString(): string {
-        return this._direction;
+        return this.type;
     }
 
     private rotate(rotation: number) {
         const arrayLength = directionValues.length;
-        const currentIndex = directionValues.indexOf(this._direction);
+        const currentIndex = directionValues.indexOf(this.type);
         const newIndex = (currentIndex + rotation + arrayLength) % arrayLength;
-        this._direction = directionValues[newIndex];
+        this.type = directionValues[newIndex];
     }
 
     private isDirectionType(value: unknown): value is DirectionType {
