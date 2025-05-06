@@ -4,9 +4,9 @@ import type { Plateau } from 'src/plateau.ts';
 export class Rover {
     private state: RoverState | undefined = undefined;
 
-    public land(plateau: Plateau, position: string): void {
+    public land(plateau: Plateau, position: string): boolean {
         this.state = RoverState.fromString(position);
-        plateau.addRover(this);
+        return plateau.addRover(this);
     }
 
     public go(commandSequence: string): boolean {
@@ -30,6 +30,12 @@ export class Rover {
         if (command === 'M') {
             this.state?.moveForward();
         }
+    }
+
+    public hasSamePosition(other: Rover): boolean {
+        if (!this.state) return false;
+
+        return this.state.hasSamePosition(other.state);
     }
 
     public reportPosition(): string {

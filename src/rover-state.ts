@@ -25,6 +25,12 @@ export class RoverState {
         return new RoverState(position, direction);
     }
 
+    public hasSamePosition(other?: RoverState): boolean {
+        if (!other) return false;
+
+        return this.position.equals(other.position);
+    }
+
     public turnLeft() {
         this.direction.turnLeft();
     }

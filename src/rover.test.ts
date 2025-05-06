@@ -54,6 +54,33 @@ describe('MarsRoverShould', () => {
         rover.land(plateau, '1 2 N');
 
         const result = rover.go('L');
-        expect(result).toBe(true);
+        expect(result).toBeTruthy();
+    });
+
+    test('land the rover on the plateau', () => {
+        const rover = new Rover();
+        const result = rover.land(plateau, '1 2 N');
+
+        expect(result).toBeTruthy();
+    });
+
+    test('not be allowed to land on the same position as another rover', () => {
+        const rover1 = new Rover();
+        rover1.land(plateau, '1 2 N');
+
+        const rover2 = new Rover();
+        const result = rover2.land(plateau, '1 2 N');
+
+        expect(result).toBeFalsy();
+    });
+
+    test('be allowed to land when the position is not occupied by another rover', () => {
+        const rover1 = new Rover();
+        rover1.land(plateau, '1 2 N');
+
+        const rover2 = new Rover();
+        const result = rover2.land(plateau, '3 2 N');
+
+        expect(result).toBeTruthy();
     });
 });

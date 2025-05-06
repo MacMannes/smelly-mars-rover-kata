@@ -87,10 +87,9 @@
   - [x] Add `addRover` method to `Plateau` class, passing parameter `Rover`
   - [x] Add `land` method to `Rover` class with parameters Plateau and string
         representation of position
-    - [ ] Add `isOccupied` method to `Plateau` class, passing parameter
-          `Position`
-      - [ ] Add method `hasPosition` to `Rover` class
   - [x] Remove parameters from `Rover` constructor
   - [x] Rover should report an empty position when not landed
-  - [ ] Don't allow rovers to land on the same position
+  - [x] Don't allow rovers to land on the same position
+    - [x] Add `canLand` method to `Plateau` class
+      - [x] Add method `hasPosition` to `Rover` class
   - [ ] Stop movement if rover detects a blockage

@@ -24,6 +24,10 @@ export class Position {
         }
     }
 
+    public equals(posistion: Position): boolean {
+        return this.x === posistion.x && this.y === posistion.y;
+    }
+
     public toString(): string {
         return `${this.x} ${this.y}`;
     }
