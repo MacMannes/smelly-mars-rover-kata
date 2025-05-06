@@ -14,7 +14,7 @@ export class Plateau {
 
     private canLandRover(rover: Rover): boolean {
         return !this.rovers.some((existingRover) =>
-            existingRover.hasSamePosition(rover),
+            existingRover.hasSamePositionAs(rover),
         );
     }
 }
