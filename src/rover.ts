@@ -35,7 +35,7 @@ export class Rover {
     public hasSamePositionAs(other: Rover): boolean {
         if (!this.state) return false;
 
-        return this.state.hasSamePosition(other.state);
+        return this.state.hasSamePositionAs(other.state);
     }
 
     public reportPosition(): string {
