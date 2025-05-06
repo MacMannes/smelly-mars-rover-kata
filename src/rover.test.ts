@@ -1,7 +1,14 @@
-import { describe, expect, test } from 'vitest';
+import { beforeEach, describe, expect, test } from 'vitest';
 import { Rover } from 'src/rover.ts';
+import { Plateau } from 'src/plateau.ts';
 
 describe('MarsRoverShould', () => {
+    let plateau: Plateau;
+
+    beforeEach(() => {
+        plateau = new Plateau();
+    });
+
     test.each([
         ['', '', '0 0 N'],
         ['1 2 N', '', '1 2 N'],
@@ -24,6 +31,8 @@ describe('MarsRoverShould', () => {
         "start at '%s', with instructions '%s' => '%s'",
         (startingPosition, instructions, expectedOutput) => {
             const rover = new Rover(startingPosition);
+            rover.land(plateau, startingPosition);
+
             rover.go(instructions);
             expect(rover.reportPosition()).toBe(expectedOutput);
         },

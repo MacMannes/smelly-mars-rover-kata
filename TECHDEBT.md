@@ -85,7 +85,7 @@
 - [ ] Add support for multiple rovers
   - [x] Add `Plateau` class with array of `Rover` objects
   - [x] Add `addRover` method to `Plateau` class, passing parameter `Rover`
-  - [ ] Add `land` method to `Rover` class with parameters Plateau and string
+  - [x] Add `land` method to `Rover` class with parameters Plateau and string
         representation of position
     - [ ] Add `isOccupied` method to `Plateau` class, passing parameter
           `Position`

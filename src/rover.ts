@@ -1,10 +1,16 @@
 import { RoverState } from 'src/rover-state.ts';
+import type { Plateau } from 'src/plateau.ts';
 
 export class Rover {
-    private readonly state: RoverState;
+    private state: RoverState;
 
     constructor(initalState: string) {
         this.state = RoverState.fromString(initalState);
+    }
+
+    public land(plateau: Plateau, position: string): void {
+        this.state = RoverState.fromString(position);
+        plateau.addRover(this);
     }
 
     public go(commandSequence: string): void {
