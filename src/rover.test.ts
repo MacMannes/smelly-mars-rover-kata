@@ -83,4 +83,24 @@ describe('MarsRoverShould', () => {
 
         expect(result).toBeTruthy();
     });
+
+    test('return false when comparing the position with a rover that is not landed', () => {
+        const rover1 = new Rover();
+        rover1.land(plateau, '1 2 N');
+
+        const rover2 = new Rover();
+
+        const result = rover1.hasSamePosition(rover2);
+        expect(result).toBe(false);
+    });
+
+    test('return false when not landed and comparing the position with a rover that is labded', () => {
+        const rover1 = new Rover();
+
+        const rover2 = new Rover();
+        rover2.land(plateau, '1 2 N');
+
+        const result = rover1.hasSamePosition(rover2);
+        expect(result).toBe(false);
+    });
 });
