@@ -37,4 +37,9 @@ describe('MarsRoverShould', () => {
             expect(rover.reportPosition()).toBe(expectedOutput);
         },
     );
+
+    test('report empty position when not landed', () => {
+        const rover = new Rover('1 2 N');
+        expect(rover.reportPosition()).toBe('');
+    });
 });
