@@ -9,7 +9,7 @@
     "prepare": "husky",
     "check-types": "tsc",
     "check-types:watch": "tsc -w",
-    "test": "vitest run src/",
+    "test": "vitest run src/ --reporter verbose",
     "test:watch": "vitest src/",
     "test:coverage": "vitest run src/ --coverage",
     "test:ci": "vitest run src/ --silent --coverage",
