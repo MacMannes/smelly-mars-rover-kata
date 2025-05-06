@@ -30,7 +30,7 @@ describe('MarsRoverShould', () => {
     ])(
         "start at '%s', with instructions '%s' => '%s'",
         (startingPosition, instructions, expectedOutput) => {
-            const rover = new Rover(startingPosition);
+            const rover = new Rover();
             rover.land(plateau, startingPosition);
 
             rover.go(instructions);
@@ -39,7 +39,21 @@ describe('MarsRoverShould', () => {
     );
 
     test('report empty position when not landed', () => {
-        const rover = new Rover('1 2 N');
+        const rover = new Rover();
         expect(rover.reportPosition()).toBe('');
+    });
+
+    test('not handle commands when not landed', () => {
+        const rover = new Rover();
+        const result = rover.go('L');
+        expect(result).toBe(false);
+    });
+
+    test('handle commands when landed', () => {
+        const rover = new Rover();
+        rover.land(plateau, '1 2 N');
+
+        const result = rover.go('L');
+        expect(result).toBe(true);
     });
 });

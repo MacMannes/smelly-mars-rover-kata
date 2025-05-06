@@ -90,7 +90,7 @@
     - [ ] Add `isOccupied` method to `Plateau` class, passing parameter
           `Position`
       - [ ] Add method `hasPosition` to `Rover` class
-  - [ ] Rover should report an empty position when not landed
-  - [ ] Remove parameters from `Rover` constructor
+  - [x] Remove parameters from `Rover` constructor
+  - [x] Rover should report an empty position when not landed
   - [ ] Don't allow rovers to land on the same position
   - [ ] Stop movement if rover detects a blockage
