@@ -10,6 +10,7 @@
 |      8 | Fix _Feature envy_ issues                         |
 |      9 | Fix _Data clumps_ issue                           |
 | 10, 11 | Fix _Primitive obsession_ issue                   |
+|  12-15 | Add support for multiple rovers                   |
 
 **_N.B._**: I spent more 🍅 than expected, because I didn't feel very well, but
 I'm having so much fun with this kata that I just kept going. Also, this was the
